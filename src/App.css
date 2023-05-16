@@ -1,38 +1,131 @@
-.App {
-  text-align: center;
+:root {
+  /* Site Colors */
+  --dark-purple: #100D2A;
+  --purple: #271C54;
+  --light-purple: #B6B0C6;
+  --orange: #EE9344;
+  --black: #111111;
+  --white: #ffffff;
+
+  /* Typography */
+  --default-font: Epilogue, sans-serif;
+  --xl-font-size: 6.375em;
+  --l-font-size: 4.4375em;
+  --md-font-size: 3.4375em;
+  --sm-font-size: 1.4375em;
+  --default-line-height: 1.2em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Headings */
+
+h1 {
+  font-family: var(--default-font);
+  font-weight: bold;
+  color: var(--orange);
+  font-size: var(--xl-font-size);
+  margin:0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+  font-family: var(--default-font);
+  font-weight: 300;
+  color: var(--white);
+  font-size: var(--md-font-size);
+  line-height: var(--default-line-height);
+  margin:0;
 }
 
+h3, h4, h5, h6 {
+  font-family: var(--default-font);
+  font-weight: 300;
+  color: var(--white);
+  font-size: var(--sm-font-size);
+}
+
+/* Text and Links */
+p {
+  color:var(--light-purple);
+}
+
+a {
+  color: var(--white);
+  transition: all .25s ease;
+}
+
+a:hover {
+  color: var(--orange);
+}
+
+/* Buttons */
+button {
+  background: var(--white);
+  color: var(--dark-purple);
+  border:0px;
+  padding: 14px 24px;
+  border-radius:5px;
+  font-family: var(--default-font);
+  font-size: var(--xs-font-size);
+  text-transform: uppercase;
+  box-shadow: 0px 0px 0px #ffffff3d;
+  cursor: pointer;
+  transform:translate(0,0);
+  transition:all .25s ease;
+}
+button:hover {
+  background: var(--orange);
+  color: var(--white);
+  box-shadow: 0px 0px 10px #ffffff3d;
+  transform:translate(0,-5px);
+}
+
+/* General - Custom styles */
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: var(--dark-purple);
+  min-height: 10vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  padding:10px 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.App-hero {
+  padding:20px 50px;
+  min-height: 90vh;
+  background:var(--dark-purple);
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.avatar {
+  width: 100%;
+  border-radius: 100%;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top:50px;
+}
+
+.socials .social-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-right:20px;
+  color: var(--white);
+  font-size: var(--md-font-size);
+  transform: translate(0,0);
+  transition: all .25s ease;
+}
+.socials .social-icons:hover {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-right:20px;
+  color: var(--orange);
+  transform:translate(0,-5px);
 }

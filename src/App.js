@@ -4,10 +4,24 @@ import { VscGithub } from 'react-icons/vsc';
 
 function App() {
   return (
+
+    const [isOpen, setOpen] = useState(false);
+
     <div className="App">
 
       <header className="App-header">
-        <Hamburger rounded />
+        <Hamburger rounded onToggle={toggled => {
+          if (toggled) {
+            // open a menu
+            
+          } else {
+            // close a menu
+          }
+        }} />
+
+        <div className="nav-menu">
+          nav menu
+        </div>
       </header>
 
       <section className="App-hero">

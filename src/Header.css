@@ -1,0 +1,8 @@
+.header {
+    background-color: var(--dark-purple);
+    min-height: 10vh;
+    display: flex;
+    align-items: left;
+    color: white;
+    padding:10px 50px;
+}

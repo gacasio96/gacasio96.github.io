@@ -1,30 +1,12 @@
 import './App.css';
-import { Divide as Hamburger } from 'hamburger-react';
 import { VscGithub } from 'react-icons/vsc';
 
 function App() {
   return (
 
-    const [isOpen, setOpen] = useState(false);
-
     <div className="App">
 
-      <header className="App-header">
-        <Hamburger rounded onToggle={toggled => {
-          if (toggled) {
-            // open a menu
-            
-          } else {
-            // close a menu
-          }
-        }} />
-
-        <div className="nav-menu">
-          nav menu
-        </div>
-      </header>
-
-      <section className="App-hero">
+      <section className="hero">
         <div className="content">
           <h1>Hello there!</h1><br/>
           <h3>I'm G, a front-end web developer / designer based in the Philippines.</h3>
@@ -36,8 +18,22 @@ function App() {
           </div>
         </div>
         <div className="image">
-          <img src="/G - Avatar.png" className="avatar" />
+          <img src="/images/G - Avatar.png" className="avatar" />
         </div>   
+      </section>
+
+      <section className="tech-stack">
+        <img src="/logos/wordpress-logo-light.svg" className="wp-brand-logo" />
+        <img src="/logos/html-logo-light.svg" className="html-brand-logo" />
+        <img src="/logos/css-logo-light.svg" className="css-brand-logo" />
+        <img src="/logos/js-logo-light.svg" className="js-brand-logo" />
+        <img src="/logos/sass-logo-light.svg" className="sass-brand-logo" />
+        <img src="/logos/tailwindcss-logo-light.svg" className="tailwindcss-brand-logo" />
+        <img src="/logos/php-logo-light.svg" className="php-brand-logo" />
+        <img src="/logos/reactjs-logo-light.svg" className="reactjs-brand-logo" />
+        <img src="/logos/figma-logo-light.svg" className="figma-brand-logo" />
+        <img src="/logos/xd-logo-light.svg" className="xd-brand-logo" />
+        <img src="/logos/ps-logo-light.svg" className="ps-brand-logo" />
       </section>
 
     </div>

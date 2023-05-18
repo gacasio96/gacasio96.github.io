@@ -1,3 +1,84 @@
+:root {
+  /* Site Colors */
+  --dark-purple: #100D2A;
+  --purple: #271C54;
+  --light-purple: #B6B0C6;
+  --orange: #EE9344;
+  --black: #111111;
+  --white: #ffffff;
+
+  /* Typography */
+  --default-font: Epilogue, sans-serif;
+  --xl-font-size: 6.375em;
+  --l-font-size: 4.4375em;
+  --md-font-size: 3.4375em;
+  --sm-font-size: 1.4375em;
+  --default-line-height: 1.2em;
+}
+
+/* Headings */
+
+h1 {
+  font-family: var(--default-font);
+  font-weight: bold;
+  color: var(--orange);
+  font-size: var(--xl-font-size);
+  margin:0;
+}
+
+h2 {
+  font-family: var(--default-font);
+  font-weight: 300;
+  color: var(--white);
+  font-size: var(--md-font-size);
+  line-height: var(--default-line-height);
+  margin:0;
+}
+
+h3, h4, h5, h6 {
+  font-family: var(--default-font);
+  font-weight: 300;
+  color: var(--white);
+  font-size: var(--sm-font-size);
+  line-height: var(--default-line-height);
+}
+
+/* Text and Links */
+p {
+  color:var(--light-purple);
+}
+
+a {
+  color: var(--white);
+  transition: all .25s ease;
+}
+
+a:hover {
+  color: var(--orange);
+}
+
+/* Buttons */
+button {
+  background: var(--white);
+  color: var(--dark-purple);
+  border:0px;
+  padding: 14px 24px;
+  border-radius:5px;
+  font-family: var(--default-font);
+  font-size: var(--xs-font-size);
+  text-transform: uppercase;
+  box-shadow: 0px 0px 0px #ffffff3d;
+  cursor: pointer;
+  transform:translate(0,0);
+  transition:all .25s ease;
+}
+button:hover {
+  background: var(--orange);
+  color: var(--white);
+  box-shadow: 0px 0px 10px #ffffff3d;
+  transform:translate(0,-5px);
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +92,38 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Media Queries */
+
+  /* Large Devices */
+  @media screen and ( max-width:1280px ) {
+    :root {
+      /* Typography */
+      --xl-font-size: 5.375em;
+      --l-font-size: 3.4375em;
+      --md-font-size: 2.4375em;
+      --sm-font-size: 1.4375em;
+    }
+  }
+
+  /* Medium Devices */
+  @media screen and ( max-width:768px ) {
+    :root {
+      /* Typography */
+      --xl-font-size: 4.375em;
+      --l-font-size: 2.4375em;
+      --md-font-size: 2.4375em;
+      --sm-font-size: 1.4375em;
+    }
+  }
+
+  /* Small Devices */
+  @media screen and ( max-width:425px ) {
+    :root {
+      /* Typography */
+      --xl-font-size: 3.375em;
+      --l-font-size: 2.4375em;
+      --md-font-size: 2.4375em;
+      --sm-font-size: 1.2375em;
+    }
+  }

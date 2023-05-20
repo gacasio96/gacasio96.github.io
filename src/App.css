@@ -1,48 +1,29 @@
-.hero {
-  padding:20px 50px;
-  min-height: 70vh;
+.App {
   background:var(--dark-purple);
-  display:flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  gap: 30px;
 }
-
+section.hero > .container > .row {
+  height: 70vh;
+}
 .avatar {
-  width: 100%;
+  width: 350px;
   border-radius: 100%;
 }
-
 .socials {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-top:50px;
+  margin-top:50px !important;
 }
-
-.socials .social-icons {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding-right:20px;
+.socials .social-icons a {
   color: var(--white);
-  font-size: var(--md-font-size);
+  display: inline-flex;
+  font-size: var(--md-font-size) !important;
   transform: translate(0,0);
-  transition: all .25s ease;
+  transition: all .25s ease !important;
 }
-.socials .social-icons:hover {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding-right:20px;
+.socials .social-icons a:hover {
   color: var(--orange);
   transform:translate(0,-5px);
 }
-
 .tech-stack {
-  padding:0px 50px;
-  min-height: 20vh;
+  min-height: 10vh;
   background:var(--purple);
   display:flex;
   flex-direction: row;
@@ -51,33 +32,25 @@
   gap: 30px;
 }
 
-@media screen and ( max-width: 768px ) {
-  .hero {
-    padding:20px 50px;
-    min-height: 50vh;
+@media screen and ( max-width: 992px ) {
+  section.hero {
+    padding:20px;
     background:var(--dark-purple);
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
     text-align: center;
   }
-  .socials {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-top:50px;
-  }
-  .tech-stack {
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
+  section.hero > .container > .row {
+    height: initial;
   }
   .avatar {
-    width: 70%;
+    width: 200px;
     border-radius: 100%;
+    margin-bottom:50px;
+  }
+  .socials {
+    margin-top:50px;
+    margin-bottom:50px;
+  }
+  .socials .social-icons a {
+    margin-top:20px;
   }
 }

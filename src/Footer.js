@@ -3,7 +3,7 @@ import './Footer.css';
 function Footer() {
   return (
     
-      <footer>© Copyright G Acasio 2023. </footer>
+      <footer>© Copyright G Acasio 2023.</footer>
 
   );
 }

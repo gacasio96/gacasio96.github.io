@@ -2,7 +2,7 @@
   background:var(--dark-purple);
 }
 section.hero > .container > .row {
-  height: 70vh;
+  height: 75vh;
 }
 .avatar {
   width: 350px;
@@ -23,7 +23,7 @@ section.hero > .container > .row {
   transform:translate(0,-5px);
 }
 .tech-stack {
-  min-height: 10vh;
+  min-height: 15vh;
   background:var(--purple);
   display:flex;
   flex-direction: row;

@@ -62,10 +62,6 @@ a.pf-link:hover {
   font-weight: bold;
   text-transform: uppercase;
 }
-.pf-image-wrap:before{
-
-}
-
 #hiblaltd .pf-image-wrap {
   background-image:url('/public/portfolio/hiblaltd-screenshot.png');
   background-size: cover;

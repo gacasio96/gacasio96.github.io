@@ -1,5 +1,6 @@
 import './App.css';
 import { VscGithub } from 'react-icons/vsc';
+import { BsDownload, BsArrowRightCircle, BsArrowUpRight } from 'react-icons/bs';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -15,12 +16,12 @@ function App() {
             <Row className="align-items-center">
               <Col lg={8} md={12} sm={12} xs={12}>
                 <h1>Hello there!</h1><br/>
-                <h3>I'm G, a front-end web developer / designer based in the Philippines.</h3>
-                    <Row className="socials align-items-center justify-content-xs-center">
-                      <Col lg={3} md={8} sm={7} xs={8} >
-                        <Button variant="light" href="#">Download resume</Button>
+                <h3>I'm G, a web developer / designer based in the Philippines.</h3>
+                    <Row className="hero-links align-items-center justify-content-xs-center">
+                      <Col lg={4} md={6} sm={6} xs={12} >
+                        <Button variant="light" href="#">Download resume &nbsp;<BsDownload /></Button>
                       </Col>
-                      <Col className="social-icons" lg={3} md={4} sm={5} xs={4}>
+                      <Col className="social-icons" lg={3} md={6} sm={6} xs={12}>
                         <a href="https://github.com/gacasio96" target="_blank"><VscGithub /></a>
                       </Col>
                     </Row>
@@ -76,13 +77,35 @@ function App() {
             </Row>
           </Container>
         </section>
+        <section className="portfolio">
+          <Container>
+            <Row className="justify-content-center">
+              <Col lg={12} md={12} sm={12} xs={12}>
+                <div className="pf-blurb">
+                  <h2>Featured Work</h2><br/>
+                  <p>As an experienced web developer, I have had the opportunity to work on various projects that involve designing, developing, and maintaining websites. With a strong foundation in web development, I specialize in utilizing the WordPress platform to create dynamic, functional, and visually appealing websites.</p>
+                </div>
+              </Col>
+            </Row>
+            <Row id="hiblaltd" className="align-items-center pf-item">
+              <Col lg={6} md={12} sm={12} xs={12}>
+                <div className="pf-content">
+                <h2>Hibla Ltd</h2>
+                <p>The primary objective of this project was to establish an attractive and user-friendly online store using the WordPress content management system and the WooCommerce plugin. The client desired a website that could effectively showcase their products, facilitate seamless browsing and purchasing experiences for customers, and integrate essential e-commerce functionality.</p>
+                <a className="pf-link" href="https://www.hiblaltd.com/" target="_blank">View live website &nbsp;<BsArrowUpRight /></a>
+                </div>
+              </Col>
+              <Col lg={6} md={12} sm={12} xs={12}>
+                <div className="pf-image-wrap">
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        </section>
+        
       {/* END APP */}
       </div> 
 
-      
-      
-    
-    
   );
 }
 

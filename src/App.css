@@ -2,7 +2,7 @@
   background:var(--dark-purple);
 }
 section.hero > .container > .row {
-  height: 90vh;
+  min-height: 600px;
 }
 .avatar {
   width: 350px;
@@ -23,7 +23,7 @@ section.hero > .container > .row {
   transform:translate(0,-5px);
 }
 .tech-stack {
-  min-height: 15vh;
+  min-height: 100px;
   background:var(--purple);
   display:flex;
   flex-direction: row;
@@ -32,7 +32,7 @@ section.hero > .container > .row {
   gap: 30px;
 }
 .portfolio {
-  padding:150px 0px;
+  padding:100px 0px;
   background: var(--dark-purple);
 }
 .pf-blurb {

@@ -11,7 +11,7 @@ function App() {
 
       <div className="App">
       {/* START APP */}
-        <section className="hero">
+        <section id="home" className="hero">
           <Container>
             <Row className="align-items-center">
               <Col lg={8} md={12} sm={12} xs={12}>
@@ -34,7 +34,7 @@ function App() {
             </Row>
           </Container>
         </section>
-        <section className="tech-stack">
+        <section id="tech-stack" className="tech-stack">
           <Container>
             <Row className="align-items-center">
               <Col lg={12} md={12} sm={12} xs={11}>
@@ -77,7 +77,7 @@ function App() {
             </Row>
           </Container>
         </section>
-        <section className="portfolio">
+        <section id="work" className="portfolio">
           <Container>
             <Row className="justify-content-center">
               <Col lg={12} md={12} sm={12} xs={12}>

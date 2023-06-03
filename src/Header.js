@@ -24,7 +24,6 @@ function Header() {
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                   <Nav.Link href="#home">Home</Nav.Link>
                   <Nav.Link href="#work">Work</Nav.Link>
-                  
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>

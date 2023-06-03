@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.66cf913a.css",
-    "main.js": "/static/js/main.cc21f89f.js",
+    "main.css": "/static/css/main.0491ea95.css",
+    "main.js": "/static/js/main.b6692dcd.js",
     "static/js/787.016d9365.chunk.js": "/static/js/787.016d9365.chunk.js",
     "static/media/hiblaltd-screenshot.png": "/static/media/hiblaltd-screenshot.038c8864e34b729870f4.png",
     "index.html": "/index.html",
-    "main.66cf913a.css.map": "/static/css/main.66cf913a.css.map",
-    "main.cc21f89f.js.map": "/static/js/main.cc21f89f.js.map",
+    "main.0491ea95.css.map": "/static/css/main.0491ea95.css.map",
+    "main.b6692dcd.js.map": "/static/js/main.b6692dcd.js.map",
     "787.016d9365.chunk.js.map": "/static/js/787.016d9365.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.66cf913a.css",
-    "static/js/main.cc21f89f.js"
+    "static/css/main.0491ea95.css",
+    "static/js/main.b6692dcd.js"
   ]
 }

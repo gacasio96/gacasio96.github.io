@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.0491ea95.css",
-    "main.js": "/static/js/main.b6692dcd.js",
-    "static/js/787.016d9365.chunk.js": "/static/js/787.016d9365.chunk.js",
-    "static/media/hiblaltd-screenshot.png": "/static/media/hiblaltd-screenshot.038c8864e34b729870f4.png",
-    "index.html": "/index.html",
-    "main.0491ea95.css.map": "/static/css/main.0491ea95.css.map",
-    "main.b6692dcd.js.map": "/static/js/main.b6692dcd.js.map",
-    "787.016d9365.chunk.js.map": "/static/js/787.016d9365.chunk.js.map"
+    "main.css": "/gacasio96.github.io/static/css/main.073c9b0a.css",
+    "main.js": "/gacasio96.github.io/static/js/main.9038f0e4.js",
+    "static/js/787.93455dee.chunk.js": "/gacasio96.github.io/static/js/787.93455dee.chunk.js",
+    "static/media/logo.svg": "/gacasio96.github.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/gacasio96.github.io/index.html",
+    "main.073c9b0a.css.map": "/gacasio96.github.io/static/css/main.073c9b0a.css.map",
+    "main.9038f0e4.js.map": "/gacasio96.github.io/static/js/main.9038f0e4.js.map",
+    "787.93455dee.chunk.js.map": "/gacasio96.github.io/static/js/787.93455dee.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0491ea95.css",
-    "static/js/main.b6692dcd.js"
+    "static/css/main.073c9b0a.css",
+    "static/js/main.9038f0e4.js"
   ]
 }

@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components"
-import Navbar from "./Navbar"
 
 const data = [
   "Web Design",
@@ -15,7 +14,7 @@ const Section = styled.div`
   display: flex;
   justify-content: center;
   @media (max-width: 992px) {
-    min-height: 500px;
+    min-height: initial;
   }
 `
 const Container = styled.div`
@@ -34,10 +33,11 @@ const Container = styled.div`
   }
   @media (max-width: 992px) {
     flex-direction: column;
-    text-align: center;
+    align: center;
     padding:100px 20px;
     gap: 40px;
-    justify-content: initial;
+    justify-content: center;
+    height: initial;
   }
 `
 const Left = styled.div`
@@ -58,6 +58,8 @@ const ListItem = styled.li`
   color: transparent;
   -webkit-text-stroke: 1px #ffffff;
   position: relative;
+  text-transform: uppercase;
+  letter-spacing: -2px;
 
   &:after {
     content: "${(props)=>props.text}";
@@ -65,7 +67,7 @@ const ListItem = styled.li`
     top: 0;
     left: 0;
     overflow: hidden;
-    color: #fff;
+    color: #ffffff;
     width: 0px;
     white-space: nowrap;
   }
@@ -80,6 +82,9 @@ const ListItem = styled.li`
       }
     }
   }
+  @media (max-width: 992px){
+    font-size: 2.5rem;
+  }
 `
 const Right = styled.div`
   flex: 1;
@@ -89,7 +94,6 @@ const Right = styled.div`
 const Works = () => {
     return(
         <Section id="works">
-            <Navbar/>
             <Container>
               <Left>
                 <List>
@@ -99,7 +103,7 @@ const Works = () => {
                 </List>
               </Left>
               <Right>
-        
+                
               </Right>
             </Container>
         </Section>

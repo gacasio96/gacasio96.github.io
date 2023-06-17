@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 900;
     letter-spacing: -2px;
     line-height: 1em;
+    color: #ffffff;
   }
   h1{
     font-size: 4.5rem;
@@ -29,7 +30,7 @@ const GlobalStyle = createGlobalStyle`
       font-size: .75rem;
     }
   }
-  p, li, span, div{
+  p, li, span, div, input, textarea {
     font-family: Inter, Helvetica, Sans-Serif;
     font-weight:300;
     font-size: 1rem;
@@ -67,6 +68,12 @@ const GlobalStyle = createGlobalStyle`
     color: #fff;
     transform: translate(0px,2px);
     box-shadow: 1px 1px 10px rgba(0,0,0,.15);
+  }
+  input, textarea {
+    background: transparent;
+    border: 0px;
+    border-bottom: 1px solid #fff;
+    color: #fff;
   }
 `
  

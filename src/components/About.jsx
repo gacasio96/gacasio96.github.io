@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components"
-import Navbar from "./Navbar"
 
 const Section = styled.div`
   min-height: 100vh;
@@ -58,7 +57,6 @@ const Button = styled.button`
 const About = () => {
     return(
         <Section id="about">
-            <Navbar/>
             <Container>
               <Left>
                 <Img src=""/> 

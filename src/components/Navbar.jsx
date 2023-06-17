@@ -45,7 +45,7 @@ const Link = styled.a`
     font-size: 14px;
     text-decoration: none !important;
 `
-const Button = styled.button``
+const Button = styled.a``
 
 const Navbar = () => {
     return(
@@ -67,7 +67,7 @@ const Navbar = () => {
                         </ListItem>
                     </List>
                 </Links>
-                <Button>Download Resume</Button>
+                <Button className="btn">Download Resume</Button>
             </Container>
         </Section>
     )

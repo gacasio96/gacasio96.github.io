@@ -49,10 +49,9 @@ const Img = styled.img`
   }
   
 `
-const Button = styled.button`
+const Button = styled.a`
   margin-top:20px;
 `
-
 
 const About = () => {
     return(
@@ -62,10 +61,9 @@ const About = () => {
                 <Img src=""/> 
               </Left>
               <Right>
-                <Title>Heading</Title>
+                <Title>About</Title>
                 <Desc>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in fermentum dui. In posuere metus vel ligula laoreet scelerisque.</Desc>
-                <Button>See my works</Button>
-                               
+                <Button className="btn" href="#works">See my works</Button>                               
               </Right>
             </Container>
         </Section>

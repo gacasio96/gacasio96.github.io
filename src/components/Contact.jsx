@@ -34,6 +34,9 @@ const Container = styled.div`
 `
 const Left = styled.div`
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `
 const Right = styled.div`
   flex: 1;
@@ -46,7 +49,7 @@ const Title = styled.h2``
 const Form = styled.form`
   display: flex;
   flex-direction: column;
-  padding: 60px;
+  padding: 20px;
   height: 100%;
   justify-content: center;
 `
@@ -59,7 +62,7 @@ const Input = styled.input`
 const TextArea = styled.textarea`
   padding: 12px;
 `
-const Button = styled.button`
+const Button = styled.a`
   margin-top:20px;
 `
 
@@ -69,16 +72,17 @@ const Contact = () => {
         <Section id="contact">
             <Container>
               <Left>
+                
+                <Map />
+              </Left>
+              <Right>
                 <Form>
                   <Title>Get In Touch</Title>
                   <Input placeholder="Name"/>
                   <Input placeholder="Email Address"/>
                   <TextArea placeholder="Your Message" rows={5}/>
-                  <Button>Submit</Button>
+                  <Button className="btn">Submit</Button>
                 </Form>
-              </Left>
-              <Right>
-                <Map />
               </Right>
             </Container>
         </Section>

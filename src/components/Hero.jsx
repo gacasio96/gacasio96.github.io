@@ -34,10 +34,12 @@ const Container = styled.div`
   }
 `
 const Left = styled.div`
-  flex: 2;
+  flex: 1;
 `
 const Right = styled.div`
   flex: 1;
+  display: flex;
+  justify-content: center;
 `
 const Title = styled.h1``
 const Desc = styled.p``
@@ -45,7 +47,7 @@ const Img = styled.img`
   animation: float 3s infinite ease alternate;
   border-radius: 100%;
   box-shadow: 0px 0px 20px rgba(0,0,0,.7);
-  width: 100%;
+  width: 50%;
 
   @keyframes float {
     100% {
@@ -61,7 +63,7 @@ const Img = styled.img`
   }
   
 `
-const Button = styled.button`
+const Button = styled.a`
   margin-top:20px;
 `
 
@@ -74,7 +76,7 @@ const Hero = () => {
               <Left>
                 <Title>Hi, I'm G!</Title>
                 <Desc>I'm a highly skilled WordPress web developer with years of professional experience. My expertise lies in creating dynamic and robust websites by customizing themes, integrating plugins, and optimizing performance. </Desc>
-                <Button>Learn More</Button>
+                <Button className="btn" href="#about">Learn More</Button>
               </Left>
               <Right>
                 <Img src="./img/G - Avatar.png"/>                

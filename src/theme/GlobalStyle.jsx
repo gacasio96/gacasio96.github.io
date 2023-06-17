@@ -49,22 +49,27 @@ const GlobalStyle = createGlobalStyle`
   a:hover {
     color: #ababab;
   }
-  button {
+  button, .btn {
     font-family: Inter, Helvetica, Sans-Serif;
     font-weight: 600;
     width: auto;
     padding: 14px 24px;
     border-radius: 10px;
-    background: #fffff;
+    background: #ffffff !important;
     border:0px;
     color: #262EBF;
     transform: translate(0,0);
     transition: all .25s ease-in-out;
     cursor: pointer;
     box-shadow: 1px 1px 0px rgba(0,0,0,.15);
+    text-decoration: none;
+    line-height: 1.7em;
+    display: block;
+    float: left;
+    text-align: center;
   }
-  button:hover {
-    background: #262EBF;
+  button:hover, .btn:hover {
+    background: #262EBF !important;
     color: #fff;
     transform: translate(0px,2px);
     box-shadow: 1px 1px 10px rgba(0,0,0,.15);

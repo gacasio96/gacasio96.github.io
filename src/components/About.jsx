@@ -6,7 +6,7 @@ const Section = styled.div`
   min-height: 100vh;
   scroll-snap-align: center;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   @media (max-width: 992px) {
     min-height: 500px;
   }
@@ -61,7 +61,7 @@ const About = () => {
             <Navbar/>
             <Container>
               <Left>
-                <Img src="./img/G - Avatar.png"/> 
+                <Img src=""/> 
               </Left>
               <Right>
                 <Title>Heading</Title>

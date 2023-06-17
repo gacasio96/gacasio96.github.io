@@ -12,32 +12,41 @@ const GlobalStyle = createGlobalStyle`
     line-height: 1em;
   }
   h1{
-    font-size: 50px;
+    font-size: 4.5rem;
+    @media (max-width: 992px) {
+      font-size: 3rem;
+    }
   }
   h2{
-    font-size: 40px;
+    font-size: 3rem;
+    @media (max-width: 992px) {
+      font-size: 2rem;
+    }
   }
   h3{
-    font-size: 30px;
+    font-size: 1.5rem;
+    @media (max-width: 992px) {
+      font-size: .75rem;
+    }
   }
-  p, li, span{
+  p, li, span, div{
     font-family: Inter, Helvetica, Sans-Serif;
     font-weight:300;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.5em;
     color: #cccccc;
   }
   a {
     font-family: Inter, Helvetica, Sans-Serif;
     font-weight:400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.5em;
     color: #ffffff;
     text-decoration: underline;
     transition: all .15s ease-in-out;
   }
   a:hover {
-    color: #444efc;
+    color: #ababab;
   }
   button {
     font-family: Inter, Helvetica, Sans-Serif;

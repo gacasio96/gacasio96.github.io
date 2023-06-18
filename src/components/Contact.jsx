@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useRef, useState} from "react"
+import emailjs from '@emailjs/browser'
 import styled from "styled-components"
 import Map from "./Map"
 
@@ -49,8 +50,9 @@ const Title = styled.h2``
 const Form = styled.form`
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 100px;
   height: 100%;
+  width:100%;
   justify-content: center;
 `
 
@@ -62,26 +64,44 @@ const Input = styled.input`
 const TextArea = styled.textarea`
   padding: 12px;
 `
-const Button = styled.a`
+const Button = styled.button`
   margin-top:20px;
 `
 
-
 const Contact = () => {
+
+  const ref = useRef();
+  const [success,setSuccess] = useState(null)
+
+  const handleSubmit = e => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_x0fp63d', 'template_sc9p0mu', ref.current, 'bBUgEugx9yhj0Yz1s')
+      .then((result) => {
+          console.log(result.text);
+          setSuccess(true)
+      }, (error) => {
+          console.log(error.text);
+          setSuccess(false)
+      });
+  }
+
     return(
         <Section id="contact">
             <Container>
               <Left>
-                
                 <Map />
               </Left>
               <Right>
-                <Form>
+                <Form ref={ref} onSubmit={handleSubmit}>
                   <Title>Get In Touch</Title>
-                  <Input placeholder="Name"/>
-                  <Input placeholder="Email Address"/>
-                  <TextArea placeholder="Your Message" rows={5}/>
-                  <Button className="btn">Submit</Button>
+                  <Input placeholder="Name" name="name"/>
+                  <Input placeholder="Email Address" name="email"/>
+                  <TextArea placeholder="Your Message" rows={5} name="message"/>
+                  <Button className="btn" type="submit">Submit</Button>
+                  <br/>
+                  {success && 
+                  "Your message has been sent. I'll get back to you soon!"}
                 </Form>
               </Right>
             </Container>

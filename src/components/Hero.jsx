@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components"
 import Navbar from "./Navbar"
+import Cube from "./Cube"
+import { Canvas } from "@react-three/fiber"
+import { OrbitControls } from "@react-three/drei"
 
 const Section = styled.div`
   min-height: 100vh;
@@ -40,6 +43,7 @@ const Right = styled.div`
   flex: 1;
   display: flex;
   justify-content: center;
+  height: 100%;
 `
 const Title = styled.h1``
 const Desc = styled.p``
@@ -47,7 +51,7 @@ const Img = styled.img`
   animation: float 3s infinite ease alternate;
   border-radius: 100%;
   box-shadow: 0px 0px 20px rgba(0,0,0,.7);
-  width: 50%;
+  width: 100%;
 
   @keyframes float {
     100% {
@@ -79,7 +83,12 @@ const Hero = () => {
                 <Button className="btn" href="#about">Learn More</Button>
               </Left>
               <Right>
-                <Img src="./img/G - Avatar.png"/>                
+                <Canvas>
+                    <OrbitControls enableZoom={false} autoRotate />
+                    <ambientLight intensity={1}/>
+                    <directionalLight position={[3,2,1]} />
+                    <Cube />
+                </Canvas>                
               </Right>
             </Container>
         </Section>

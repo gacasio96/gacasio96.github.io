@@ -54,12 +54,12 @@ const List = styled.ul`
 const ListItem = styled.li`
   font-size: 4.5rem;
   font-weight: 900;
+  font-family: "Roboto", sans-serif;
   cursor: pointer;
   color: transparent;
   -webkit-text-stroke: 1px #ffffff;
   position: relative;
   text-transform: uppercase;
-  letter-spacing: -2px;
 
   &:after {
     content: "${(props)=>props.text}";

@@ -9,9 +9,6 @@ import Test from "./components/Test"
 const Container = styled.div`
   height: 100vh;
   width:100%;
-  scroll-snap-type: y mandatory;
-  scroll-behavior:smooth;
-  overflow-y: auto;
   scrollbar-width: none;
   color: #fff;
   background: url("./img/codioful-formerly-gradienta-t-Rt42Wl1RQ-unsplash.jpg");

@@ -15,14 +15,14 @@ const Container = styled.div`
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
-  &::-webkit-scrollbar {
+  ::-webkit-scrollbar {
     width: 7px; 
   }
-  &::-webkit-scrollbar-track {
+  ::-webkit-scrollbar-track {
     background: #333333;
       
   }
-  &::-webkit-scrollbar-thumb {
+  ::-webkit-scrollbar-thumb {
     background: #ffffff;
     border-radius:20px;
   }

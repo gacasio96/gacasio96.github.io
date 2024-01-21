@@ -28,7 +28,7 @@ const Container = styled.div`
   @media (max-width: 992px) {
     flex-direction: column;
     text-align: center;
-    padding:100px 20px;
+    padding:20px;
     gap: 40px;
     justify-content: initial;
   }
@@ -50,7 +50,7 @@ const Title = styled.h2``
 const Form = styled.form`
   display: flex;
   flex-direction: column;
-  padding: 100px;
+  padding: 0px 50px;
   height: 100%;
   width:100%;
   justify-content: center;

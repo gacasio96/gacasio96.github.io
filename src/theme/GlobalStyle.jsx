@@ -80,6 +80,17 @@ const GlobalStyle = createGlobalStyle`
     border-bottom: 1px solid #fff;
     color: #fff;
   }
+  ::-webkit-scrollbar {
+    width: 7px; 
+  }
+  ::-webkit-scrollbar-track {
+    background: #333333;
+      
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    border-radius:20px;
+  }
 `
  
 export default GlobalStyle

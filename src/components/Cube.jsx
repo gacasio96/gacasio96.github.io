@@ -9,7 +9,6 @@ const Cube = () => {
     const ref = useRef()
 
     return(
-
         <mesh>
             <boxGeometry args={[2.5,2.5,2.5]}/>
             <meshStandardMaterial color="#DFCDBD">

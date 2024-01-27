@@ -79,7 +79,7 @@ const Hero = () => {
             <Container>
               <Left>
                 <Title>Hi, I'm G!</Title>
-                <Desc>I'm a highly skilled WordPress web developer with years of professional experience. My expertise lies in creating dynamic and robust websites by customizing themes, integrating plugins, and optimizing performance. </Desc>
+                <Desc>I'm a highly skilled web developer with years of professional experience. My expertise lies in creating dynamic and robust websites by customizing themes, integrating plugins, and optimizing performance. </Desc>
                 <Button className="btn" href="#about">Learn More</Button>
               </Left>
               <Right>
